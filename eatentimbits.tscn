@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxwsdgr2uaaf6"]
+
+[ext_resource type="Script" uid="uid://dsvg5x5w228c2" path="res://eatentimbits.gd" id="1_ecm52"]
+[ext_resource type="Texture2D" uid="uid://bcuu8lls3yval" path="res://timbit see farther.png" id="2_ha61h"]
+
+[node name="eatentimbits" type="CharacterBody2D"]
+script = ExtResource("1_ecm52")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_ha61h")

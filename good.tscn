@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0p2q2h02hxj7"]
+
+[ext_resource type="VideoStream" uid="uid://d02i1w8dl23df" path="res://good ending animation.ogv" id="1_km42t"]
+
+[node name="good" type="Node2D"]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+offset_left = -603.0
+offset_top = -425.0
+offset_right = 1765.0
+offset_bottom = 1219.0
+stream = ExtResource("1_km42t")
+autoplay = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(562, 396)

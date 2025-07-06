@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://dph1dir5qwk8r"]
+
+[ext_resource type="Texture2D" uid="uid://b7sj0ann77tuc" path="res://finished_background.png" id="1_apngy"]
+
+[node name="MainMazeScene" type="Node2D"]
+position = Vector2(480, 578)
+metadata/_edit_group_ = true
+
+[node name="MazeBackground" type="Sprite2D" parent="."]
+position = Vector2(98, -181)
+scale = Vector2(1, 0.994)
+texture = ExtResource("1_apngy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]

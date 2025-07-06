@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://cv446rgk81oy6"]
+
+[ext_resource type="VideoStream" uid="uid://b5syi46mk0wwf" path="res://badendinganimation-ezgif.com-resize-video.ogv" id="1_s46xv"]
+
+[node name="bad" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(591, 414)
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+offset_top = 7.0
+offset_right = 1178.0
+offset_bottom = 828.0
+stream = ExtResource("1_s46xv")
+autoplay = true

@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://bvwjvm78a13yc"]
+
+[ext_resource type="Texture2D" uid="uid://b15ad3trjmo73" path="res://several racoons.png" id="1_iinju"]
+[ext_resource type="Script" uid="uid://04ilh4jdvkt0" path="res://friend_1.gd" id="1_vbvwn"]
+[ext_resource type="Script" uid="uid://db41746y8hkpt" path="res://friend_2.gd" id="2_5sjcp"]
+[ext_resource type="Script" uid="uid://0gqp12lx3h4e" path="res://friend_3.gd" id="3_2paob"]
+[ext_resource type="Script" uid="uid://hyeh65b64qmj" path="res://friend_4.gd" id="4_44gyj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_o2pgv"]
+radius = 26.0192
+
+[node name="friends" type="Node2D"]
+
+[node name="friend1" type="RigidBody2D" parent="."]
+script = ExtResource("1_vbvwn")
+
+[node name="CollisionShape2D1" type="CollisionShape2D" parent="friend1"]
+position = Vector2(356, 134)
+shape = SubResource("CircleShape2D_o2pgv")
+
+[node name="friend2" type="RigidBody2D" parent="."]
+script = ExtResource("2_5sjcp")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="friend2"]
+position = Vector2(1089, 496)
+shape = SubResource("CircleShape2D_o2pgv")
+
+[node name="friend3" type="RigidBody2D" parent="."]
+script = ExtResource("3_2paob")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="friend3"]
+position = Vector2(255, 466)
+shape = SubResource("CircleShape2D_o2pgv")
+
+[node name="friend4" type="RigidBody2D" parent="."]
+script = ExtResource("4_44gyj")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="friend4"]
+position = Vector2(201, 732)
+shape = SubResource("CircleShape2D_o2pgv")
+
+[node name="friendsimg" type="Sprite2D" parent="."]
+position = Vector2(590, 410)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_iinju")
